@@ -1,0 +1,236 @@
+Microsoft Windows [Version 10.0.17134.523]
+(c) 2018 Microsoft Corporation. All rights reserved.
+
+E:\Code\Java\NodeJS\rest-api-workshop>npm init
+This utility will walk you through creating a package.json file.
+It only covers the most common items, and tries to guess sensible defaults.
+
+See `npm help json` for definitive documentation on these fields
+and exactly what they do.
+
+Use `npm install <pkg>` afterwards to install a package and
+save it as a dependency in the package.json file.
+
+Press ^C at any time to quit.
+package name: (rest-api-workshop)
+version: (1.0.0)
+description:
+entry point: (index.js)
+test command:
+git repository:
+keywords:
+author:
+license: (ISC)
+About to write to E:\Code\Java\NodeJS\rest-api-workshop\package.json:
+
+{
+  "name": "rest-api-workshop",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
+
+
+Is this ok? (yes)
+
+E:\Code\Java\NodeJS\rest-api-workshop>node src/index.js
+Hello world
+
+E:\Code\Java\NodeJS\rest-api-workshop>npm start
+
+> rest-api-workshop@1.0.0 start E:\Code\Java\NodeJS\rest-api-workshop
+> node src/index.js
+
+Hello world
+
+E:\Code\Java\NodeJS\rest-api-workshop>npm test
+
+> rest-api-workshop@1.0.0 test E:\Code\Java\NodeJS\rest-api-workshop
+> echo "Error: no test specified" && exit 1
+
+"Error: no test specified"
+npm ERR! Test failed.  See above for more details.
+
+E:\Code\Java\NodeJS\rest-api-workshop>npm install express
+npm WARN registry Using stale data from https://registry.npmjs.org/ because the host is inaccessible -- are you offline?
+npm WARN registry Using stale package data from https://registry.npmjs.org/ due to a request error during revalidation.
+npm notice created a lockfile as package-lock.json. You should commit this file.
+npm WARN rest-api-workshop@1.0.0 No description
+npm WARN rest-api-workshop@1.0.0 No repository field.
+
++ express@4.16.4
+added 48 packages in 8.627s
+
+E:\Code\Java\NodeJS\rest-api-workshop>npm start
+
+> rest-api-workshop@1.0.0 start E:\Code\Java\NodeJS\rest-api-workshop
+> node src/index.js
+
+Server has stared on port 3000
+Terminate batch job (Y/N)? y
+
+
+
+E:\Code\Java\NodeJS\rest-api-workshop>npm i nodemon -D
+
+> nodemon@1.18.10 postinstall E:\Code\Java\NodeJS\rest-api-workshop\node_modules\nodemon
+> node bin/postinstall || exit 0
+
+Love nodemon? You can now support the project via the open collective:
+ > https://opencollective.com/nodemon/donate
+
+npm WARN rest-api-workshop@1.0.0 No description
+npm WARN rest-api-workshop@1.0.0 No repository field.
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.7 (node_modules\fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.7: wanted {"os":"darwin","arch":"any"} (current: {"os":"win32","arch":"x64"})
+
++ nodemon@1.18.10
+added 217 packages in 188.106s
+
+E:\Code\Java\NodeJS\rest-api-workshop>npm run start-watch
+
+> rest-api-workshop@1.0.0 start-watch E:\Code\Java\NodeJS\rest-api-workshop
+> nodemon src/index.js
+
+[nodemon] 1.18.10
+[nodemon] to restart at any time, enter `rs`
+[nodemon] watching: *.*
+[nodemon] starting `node src/index.js`
+Server has stared on port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node src/index.js`
+Server has stared on port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node src/index.js`
+Server has stared on port 3000
+TypeError: Date.toString is not a constructor
+    at app.use (E:\Code\Java\NodeJS\rest-api-workshop\src\index.js:8:20)
+    at Layer.handle [as handle_request] (E:\Code\Java\NodeJS\rest-api-workshop\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\Code\Java\NodeJS\rest-api-workshop\node_modules\express\lib\router\index.js:317:13)
+    at E:\Code\Java\NodeJS\rest-api-workshop\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (E:\Code\Java\NodeJS\rest-api-workshop\node_modules\express\lib\router\index.js:335:12)
+    at next (E:\Code\Java\NodeJS\rest-api-workshop\node_modules\express\lib\router\index.js:275:10)
+    at expressInit (E:\Code\Java\NodeJS\rest-api-workshop\node_modules\express\lib\middleware\init.js:40:5)
+    at Layer.handle [as handle_request] (E:\Code\Java\NodeJS\rest-api-workshop\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (E:\Code\Java\NodeJS\rest-api-workshop\node_modules\express\lib\router\index.js:317:13)
+    at E:\Code\Java\NodeJS\rest-api-workshop\node_modules\express\lib\router\index.js:284:7
+[nodemon] restarting due to changes...
+[nodemon] starting `node src/index.js`
+Server has stared on port 3000
+Tue Feb 12 2019 23:26:46 GMT+0530 (India Standard Time) => /person
+[nodemon] restarting due to changes...
+[nodemon] starting `node src/index.js`
+[nodemon] restarting due to changes...
+[nodemon] starting `node src/index.js`
+Server has stared on port 3000
+Tue Feb 12 2019 23:27:25 GMT+0530 (India Standard Time) => /person
+Tue Feb 12 2019 23:27:30 GMT+0530 (India Standard Time) => /person
+Tue Feb 12 2019 23:27:32 GMT+0530 (India Standard Time) => /person
+Tue Feb 12 2019 23:27:36 GMT+0530 (India Standard Time) => /person/pritam
+Tue Feb 12 2019 23:27:53 GMT+0530 (India Standard Time) => /person?name=pritam
+Tue Feb 12 2019 23:27:57 GMT+0530 (India Standard Time) => /person?name=pritam1
+[nodemon] restarting due to changes...
+[nodemon] starting `node src/index.js`
+[nodemon] restarting due to changes...
+[nodemon] starting `node src/index.js`
+Server has stared on port 3000
+Tue Feb 12 2019 23:30:05 GMT+0530 (India Standard Time) => /person4?name=pritam1
+[nodemon] restarting due to changes...
+[nodemon] starting `node src/index.js`
+Server has stared on port 3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node src/index.js`
+Server has stared on port 3000
+[nodemon] restarting due to changes...
+[nodemon] restarting due to changes...
+[nodemon] starting `node src/index.js`
+Server has stared on port 3000
+Tue Feb 12 2019 23:41:08 GMT+0530 (India Standard Time) => /person/error
+[nodemon] restarting due to changes...
+[nodemon] starting `node src/index.js`
+Server has stared on port 3000
+Tue Feb 12 2019 23:41:52 GMT+0530 (India Standard Time) => /error
+Error: There is Error!
+    at router.get (E:\Code\Java\NodeJS\rest-api-workshop\src\routes\person.js:18:11)
+    at Layer.handle [as handle_request] (E:\Code\Java\NodeJS\rest-api-workshop\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\Code\Java\NodeJS\rest-api-workshop\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (E:\Code\Java\NodeJS\rest-api-workshop\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (E:\Code\Java\NodeJS\rest-api-workshop\node_modules\express\lib\router\layer.js:95:5)
+    at E:\Code\Java\NodeJS\rest-api-workshop\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (E:\Code\Java\NodeJS\rest-api-workshop\node_modules\express\lib\router\index.js:335:12)
+    at next (E:\Code\Java\NodeJS\rest-api-workshop\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (E:\Code\Java\NodeJS\rest-api-workshop\node_modules\express\lib\router\index.js:174:3)
+    at router (E:\Code\Java\NodeJS\rest-api-workshop\node_modules\express\lib\router\index.js:47:12)
+Error: ENOENT: no such file or directory, stat 'E:\Code\Java\NodeJS\rest-api-workshop\src\..public\500.html'
+[nodemon] restarting due to changes...
+[nodemon] starting `node src/index.js`
+Server has stared on port 3000
+Tue Feb 12 2019 23:42:14 GMT+0530 (India Standard Time) => /error
+Error: There is Error!
+    at router.get (E:\Code\Java\NodeJS\rest-api-workshop\src\routes\person.js:18:11)
+    at Layer.handle [as handle_request] (E:\Code\Java\NodeJS\rest-api-workshop\node_modules\express\lib\router\layer.js:95:5)
+    at next (E:\Code\Java\NodeJS\rest-api-workshop\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (E:\Code\Java\NodeJS\rest-api-workshop\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (E:\Code\Java\NodeJS\rest-api-workshop\node_modules\express\lib\router\layer.js:95:5)
+    at E:\Code\Java\NodeJS\rest-api-workshop\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (E:\Code\Java\NodeJS\rest-api-workshop\node_modules\express\lib\router\index.js:335:12)
+    at next (E:\Code\Java\NodeJS\rest-api-workshop\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (E:\Code\Java\NodeJS\rest-api-workshop\node_modules\express\lib\router\index.js:174:3)
+    at router (E:\Code\Java\NodeJS\rest-api-workshop\node_modules\express\lib\router\index.js:47:12)
+	
+	Terminate batch job (Y/N)? y
+
+E:\Code\Java\NodeJS\rest-api-workshop>npm i monoose
+npm ERR! code E404
+npm ERR! 404 Not Found: monoose@latest
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     C:\Users\Pritam\AppData\Roaming\npm-cache\_logs\2019-02-12T18_16_07_209Z-debug.log
+
+E:\Code\Java\NodeJS\rest-api-workshop>npm i mongoose
+npm WARN rest-api-workshop@1.0.0 No description
+npm WARN rest-api-workshop@1.0.0 No repository field.
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.7 (node_modules\fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.7: wanted {"os":"darwin","arch":"any"} (current: {"os":"win32","arch":"x64"})
+
++ mongoose@5.4.11
+added 19 packages in 53.391s
+
+
+E:\Code\Java\NodeJS\rest-api-workshop>npm i body-parser
+npm WARN rest-api-workshop@1.0.0 No description
+npm WARN rest-api-workshop@1.0.0 No repository field.
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.7 (node_modules\fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.7: wanted {"os":"darwin","arch":"any"} (current: {"os":"win32","arch":"x64"})
+
++ body-parser@1.18.3
+updated 1 package in 26.631s
+
+E:\Code\Java\NodeJS\rest-api-workshop>
+E:\Code\Java\NodeJS\rest-api-workshop>npm run start-watch
+
+(node:1964) UnhandledPromiseRejectionWarning: Error: No hostname or hostnames provided in connection string
+    at parseConnectionString (E:\Code\Java\NodeJS\rest-api-workshop\node_modules\mongodb\lib\url_parser.js:147:11)
+    at parseHandler (E:\Code\Java\NodeJS\rest-api-workshop\node_modules\mongodb\lib\url_parser.js:129:14)
+    at module.exports (E:\Code\Java\NodeJS\rest-api-workshop\node_modules\mongodb\lib\url_parser.js:25:12)
+    at deprecated (internal/util.js:47:15)
+    at connect (E:\Code\Java\NodeJS\rest-api-workshop\node_modules\mongodb\lib\operations\mongo_client_ops.js:188:3)
+    at connectOp (E:\Code\Java\NodeJS\rest-api-workshop\node_modules\mongodb\lib\operations\mongo_client_ops.js:292:3)
+    at executeOperation (E:\Code\Java\NodeJS\rest-api-workshop\node_modules\mongodb\lib\utils.js:420:24)
+    at MongoClient.connect (E:\Code\Java\NodeJS\rest-api-workshop\node_modules\mongodb\lib\mongo_client.js:168:10)
+    at Promise (E:\Code\Java\NodeJS\rest-api-workshop\node_modules\mongoose\lib\connection.js:521:12)
+    at new Promise (<anonymous>)
+    at NativeConnection.Connection.openUri (E:\Code\Java\NodeJS\rest-api-workshop\node_modules\mongoose\lib\connection.js:518:19)
+    at Mongoose.connect (E:\Code\Java\NodeJS\rest-api-workshop\node_modules\mongoose\lib\index.js:271:15)
+    at Object.<anonymous> (E:\Code\Java\NodeJS\rest-api-workshop\src\models\customer.model.js:8:10)
+    at Module._compile (module.js:652:30)
+    at Object.Module._extensions..js (module.js:663:10)
+    at Module.load (module.js:565:32)
+(node:1964) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). (rejection id: 3)
+(node:1964) [DEP0018] DeprecationWarning: Unhandled promise rejections are deprecated. In the future, promise rejections that are not handled will terminate the Node.js process with a non-zero exit code.
+Terminate batch job (Y/N)? y

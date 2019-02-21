@@ -1,0 +1,67 @@
+MongoDB shell version v4.0.0
+connecting to: mongodb://127.0.0.1:27017
+MongoDB server version: 4.0.0
+Server has startup warnings:
+2019-02-10T02:33:53.782+0530 I CONTROL  [initandlisten]
+2019-02-10T02:33:53.782+0530 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2019-02-10T02:33:53.782+0530 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2019-02-10T02:33:53.782+0530 I CONTROL  [initandlisten]
+---
+Enable MongoDB's free cloud-based monitoring service to collect and display
+metrics about your deployment (disk utilization, CPU, operation statistics,
+etc).
+
+The monitoring data will be available on a MongoDB website with a unique
+URL created for you. Anyone you share the URL with will also be able to
+view this page. MongoDB may use this information to make product
+improvements and to suggest MongoDB products and deployment options to you.
+
+To enable free monitoring, run the following command:
+db.enableFreeMonitoring()
+---
+
+> mongo --port 27017
+2019-02-13T01:19:39.800+0530 E QUERY    [js] SyntaxError: missing ; before statement @(shell):1:8
+> mongo --port 27017;
+2019-02-13T01:19:46.655+0530 E QUERY    [js] SyntaxError: missing ; before statement @(shell):1:8
+> use admin
+switched to db admin
+> db.createUser(
+...   {
+...     user: "admin",
+...     pwd: "root",
+...     roles: [ { role: "userAdminAnyDatabase", db: "admin" },
+...              { role: "dbAdminAnyDatabase", db: "admin" },
+...              { role: "readWriteAnyDatabase", db: "admin" } ]
+...   }
+... )
+Successfully added user: {
+        "user" : "admin",
+        "roles" : [
+                {
+                        "role" : "userAdminAnyDatabase",
+                        "db" : "admin"
+                },
+                {
+                        "role" : "dbAdminAnyDatabase",
+                        "db" : "admin"
+                },
+                {
+                        "role" : "readWriteAnyDatabase",
+                        "db" : "admin"
+                }
+        ]
+}
+>
+
+
+
+
+
+
+
+-------------------
+
+mongodb+srv://pritam:<PASSWORD>@cluster0-qhmqk.mongodb.net/test?retryWrites=true
+
+mongodb://pritam:<PASSWORD>@cluster0-shard-00-00-qhmqk.mongodb.net:27017,cluster0-shard-00-01-qhmqk.mongodb.net:27017,cluster0-shard-00-02-qhmqk.mongodb.net:27017/test?ssl=true&replicaSet=Cluster0-shard-0&authSource=admin&retryWrites=true

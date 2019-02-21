@@ -1,0 +1,123 @@
+{
+	"info": {
+		"_postman_id": "c5f00eb9-b310-4221-9518-bcb95bcec563",
+		"name": "MongoDB rest-api-workshop",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:3000/customer?email=pritamkhose@gmail.com",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"email\" : \"pritamkhose@gmail.com\",\n\t\"name\" : \"pritam khose\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/customer?email=pritamkhose@gmail.com",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"customer"
+					],
+					"query": [
+						{
+							"key": "email",
+							"value": "pritamkhose@gmail.com"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/customer",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"email\" : \"pritamkhose@gmail.com\",\n\t\"name\" : \"pritamkhose\"\n}"
+				},
+				"url": "http://localhost:3000/customer"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/customer?email=pritamkhose@gmail.com",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:3000/customer?email=pritamkhose@gmail.com",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"customer"
+					],
+					"query": [
+						{
+							"key": "email",
+							"value": "pritamkhose@gmail.com"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/person",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": "http://localhost:3000/person"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/customer?email=pritamkhose@gmail.com",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:3000/customer?email=pritamkhose@gmail.com",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"customer"
+					],
+					"query": [
+						{
+							"key": "email",
+							"value": "pritamkhose@gmail.com"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
