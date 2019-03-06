@@ -1,0 +1,62 @@
+Your environment has been set up for using Node.js 8.11.2 (x64) and npm.
+
+C:\Users\Pritam>E:
+
+E:\>cd E:\Code\Java\NodeJS\rest-api-workshop
+
+E:\Code\Java\NodeJS\rest-api-workshop>npm i cors
+npm WARN rest-api-workshop@1.0.0 No description
+npm WARN rest-api-workshop@1.0.0 No repository field.
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.7 (node_modules\fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.7: wanted {"os":"darwin","arch":"any"} (current: {"os":"win32","arch":"x64"})
+
++ cors@2.8.5
+added 2 packages in 13.085s
+
+E:\Code\Java\NodeJS\rest-api-workshop>npm run
+Lifecycle scripts included in rest-api-workshop:
+  start
+    node src/index.js
+  test
+    echo "Error: no test specified" && exit 1
+
+available via `npm run-script`:
+  start-watch
+    nodemon src/index.js
+
+E:\Code\Java\NodeJS\rest-api-workshop>npm run start-watch
+
+> rest-api-workshop@1.0.0 start-watch E:\Code\Java\NodeJS\rest-api-workshop
+> nodemon src/index.js
+
+[nodemon] 1.18.10
+[nodemon] to restart at any time, enter `rs`
+[nodemon] watching: *.*
+[nodemon] starting `node src/index.js`
+(node:4776) DeprecationWarning: current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option { useNewUrlParser: true } to MongoClient.connect.
+Server has stared on port 3000
+(node:4776) DeprecationWarning: collection.ensureIndex is deprecated. Use createIndexes instead.
+Thu Mar 07 2019 01:39:56 GMT+0530 (India Standard Time) => /
+Thu Mar 07 2019 01:39:57 GMT+0530 (India Standard Time) => /favicon.ico
+Thu Mar 07 2019 01:40:03 GMT+0530 (India Standard Time) => /customers
+Thu Mar 07 2019 01:40:18 GMT+0530 (India Standard Time) => /customers
+Terminate batch job (Y/N)? y
+
+E:\Code\Java\NodeJS\rest-api-workshop>cd ExpessMongoDBRestAPI
+
+E:\Code\Java\NodeJS\rest-api-workshop\ExpessMongoDBRestAPI>npm run start-watch
+
+> rest-api-workshop@1.0.0 start-watch E:\Code\Java\NodeJS\rest-api-workshop\ExpessMongoDBRestAPI
+> nodemon src/index.js
+
+[nodemon] 1.18.10
+[nodemon] to restart at any time, enter `rs`
+[nodemon] watching: *.*
+[nodemon] starting `node src/index.js`
+(node:1432) DeprecationWarning: current URL string parser is deprecated, and will be removed in a future version. To use the new parser, pass option { useNewUrlParser: true } to MongoClient.connect.
+Server has stared on port 3000
+(node:1432) DeprecationWarning: collection.ensureIndex is deprecated. Use createIndexes instead.
+Thu Mar 07 2019 01:47:02 GMT+0530 (India Standard Time) => /customers
+Terminate batch job (Y/N)? y
+
+E:\Code\Java\NodeJS\rest-api-workshop\ExpessMongoDBRestAPI>

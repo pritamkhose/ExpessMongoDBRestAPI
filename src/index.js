@@ -2,6 +2,9 @@ let express = require('express')
 
 let app = express()
 
+var cors = require('cors')
+app.use(cors())
+
 let personRoute = require('./routes/person')
 let customerRoute = require('./routes/customer')
 let path = require('path')

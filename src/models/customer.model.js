@@ -17,7 +17,8 @@ let CustomerSchema = new mongoose.Schema({
         type: String,
         required: true,
         unique: true
-    }
+    },
+    phone: Number
 })
 
 module.exports = mongoose.model('Customer', CustomerSchema)
